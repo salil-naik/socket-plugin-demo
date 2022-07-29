@@ -64,7 +64,7 @@ function App() {
         fetchWalletData();
       });
     }
-  }, [window.ethereum]);
+  }, []);
 
   const btnStyle = {
     display: "flex",
