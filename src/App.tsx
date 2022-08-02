@@ -118,6 +118,7 @@ function App() {
             interactive: "rgb(20,24,25)",
             onInteractive: "rgb(183,191,201)",
             // borderRadius: 0
+            width: 400
           }}
           provider={provider}
           // sourceNetworks={[1,10]}
