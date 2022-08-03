@@ -1986,7 +1986,7 @@
   "version" "0.1.14"
 
 "@socket.tech/widget@file:socket.tech-widget-0.0.9.tgz":
-  "integrity" "sha512-y/itgxXzqUCzkuYq7DBVUQIAlW70xX23JzjqEtaucXcA9TQGVoDpPDk9Har9QrqsZMl059ZdXnJFib2mRTcY9w=="
+  "integrity" "sha512-03NdsCuVRISQxgjOL9k1lhXldO3sgB9BOrHOtkl+PVtVTV7l3AlINcFXoST+F0cjcKVm0/PhE8pLowxv+jzQZw=="
   "resolved" "file:socket.tech-widget-0.0.9.tgz"
   "version" "0.0.9"
   dependencies:
@@ -8496,9 +8496,9 @@
   "version" "4.0.0"
 
 "socket-v2-sdk@^1.16.0":
-  "integrity" "sha512-b6lFM3/4Ds0m7D40o2ZBrBHwz9o+57X3/u/QC7B0wzvIlecmecbbmCFJK/48SNhoS9pyDHN7r/yqHMlfteNSUA=="
-  "resolved" "https://registry.npmjs.org/socket-v2-sdk/-/socket-v2-sdk-1.16.0.tgz"
-  "version" "1.16.0"
+  "integrity" "sha512-ETwlt9ClYqenMffZAPJrGqlMSzIFrmScMykn67u3AyW/FoEK2TuNFtU0kLrK2ox6pJ2J939tHkg2XgNzvPk2ZA=="
+  "resolved" "https://registry.npmjs.org/socket-v2-sdk/-/socket-v2-sdk-1.17.0.tgz"
+  "version" "1.17.0"
   dependencies:
     "@socket.tech/ll-core" "^0.1.14"
     "axios" "^0.27.2"
