@@ -120,6 +120,7 @@ function App() {
             // borderRadius: 0
             width: 400
           }}
+          singleTxOnly
           provider={provider}
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
