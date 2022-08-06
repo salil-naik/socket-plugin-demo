@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { ethers } from "ethers";
-import { Bridge } from "@socket.tech/widget";
+import { Bridge, Customize, WidgetProps } from "@socket.tech/widget";
 
 declare global {
   interface Window {
@@ -75,6 +75,20 @@ function App() {
     fontWeight: "bold",
   };
 
+  const customizeProperties: Customize = {
+    borderRadius: 0.5,
+    width: 400,
+    // fontFamily: "'Edu QLD Beginner', cursive",
+    primary: "rgb(20,24,25)",
+    secondary: "rgb(7,10,10)",
+    accent: "rgb(130,218,192)",
+    onAccent: "rgb(0,0,0)",
+    text: "rgb(255,255,255)",
+    secondaryText: "rgb(183, 191, 201)",
+    interactive: "rgb(20,24,25)",
+    onInteractive: "rgb(183,191,201)",
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -100,7 +114,10 @@ function App() {
                 Logout
               </button>
             ) : (
-              <button style={{ ...btnStyle, marginLeft: "20px" }} onClick={connectWallet}>
+              <button
+                style={{ ...btnStyle, marginLeft: "20px" }}
+                onClick={connectWallet}
+              >
                 Connect Wallet
               </button>
             )}
@@ -108,19 +125,7 @@ function App() {
         </div>
         <Bridge
           API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
-          customize={{
-            primary: "rgb(20,24,25)",
-            secondary: "rgb(7,10,10)",
-            accent: "rgb(130,218,192)",
-            onAccent: "rgb(0,0,0)",
-            text: "rgb(255,255,255)",
-            secondaryText: "rgb(183, 191, 201)",
-            interactive: "rgb(20,24,25)",
-            onInteractive: "rgb(183,191,201)",
-            // borderRadius: 0
-            width: 400
-          }}
-          singleTxOnly
+          customize={customizeProperties}
           provider={provider}
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
