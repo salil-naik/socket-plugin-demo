@@ -92,13 +92,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div
-          className="flex justify-between w-full"
+          className="flex justify-between w-full skt-w"
           style={{ padding: "30px", marginBottom: "50px" }}
         >
-          <p className="font-medium" style={{ fontSize: "24px" }}>
+          <p className="skt-w font-medium" style={{ fontSize: "24px" }}>
             Socket Plugin Testing
           </p>
-          <div style={{ display: "flex" }}>
+          <div style={{ display: "flex", alignItems: 'center' }}>
             <p style={btnStyle}>
               {userAddress?.slice(0, 6)}...{userAddress?.slice(-4)}
             </p>
@@ -108,6 +108,7 @@ function App() {
                   ...btnStyle,
                   marginLeft: "20px",
                 }}
+                className="skt-w skt-w-input skt-w-button"
                 onClick={disconnectWallet}
               >
                 Logout
@@ -116,6 +117,7 @@ function App() {
               <button
                 style={{ ...btnStyle, marginLeft: "20px" }}
                 onClick={connectWallet}
+                className="skt-w skt-w-input skt-w-button"
               >
                 Connect Wallet
               </button>
