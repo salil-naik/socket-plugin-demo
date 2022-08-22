@@ -129,6 +129,7 @@ function App() {
           customize={customizeProperties}
           provider={provider}
           enableRefuel={true}
+          enableSameChainSwaps={true}
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
           // defaultSourceNetwork={10}
