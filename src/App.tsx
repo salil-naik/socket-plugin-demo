@@ -86,6 +86,14 @@ function App() {
     secondaryText: "rgb(183, 191, 201)",
     interactive: "rgb(20,24,25)",
     onInteractive: "rgb(183,191,201)",
+    // accent: 'rgb(239,92,36)',
+    // accent: 'rgb(255,255,255)',
+    // onAccent:'rgb(239,92,36)',
+    // secondary: 'rgb(153, 205, 83)',
+    // primary: 'rgb(255,255,255)',
+    // text: 'rgb(0,0,0)',
+    // secondaryText: "rgb(50,50,50)",
+    // interactive: 'rgb(35,66,54)'
   };
 
   return (
