@@ -138,6 +138,12 @@ function App() {
           provider={provider}
           enableRefuel={true}
           enableSameChainSwaps={true}
+          defaultSourceNetwork={1}
+defaultDestNetwork={10}
+defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
+
+
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
           // defaultSourceNetwork={10}
