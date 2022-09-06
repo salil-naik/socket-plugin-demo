@@ -96,8 +96,6 @@ function App() {
     // interactive: 'rgb(35,66,54)'
   };
 
-  const [showBridge, setShowBridge] = useState(true);
-
   return (
     <div className="App">
       <header className="App-header">
@@ -137,24 +135,22 @@ function App() {
         {/* <button onClick={() => setShowBridge(!showBridge)}>
           Show/hide
         </button> */}
-        {showBridge && (
-          <Bridge
-            API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
-            customize={customizeProperties}
-            provider={provider}
-            enableRefuel={true}
-            enableSameChainSwaps={true}
-            defaultSourceNetwork={1}
-            defaultDestNetwork={10}
-            defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-            defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
+        <Bridge
+          API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
+          customize={customizeProperties}
+          provider={provider}
+          enableRefuel={true}
+          enableSameChainSwaps={true}
+          defaultSourceNetwork={1}
+          defaultDestNetwork={10}
+          defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+          defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
 
-            // sourceNetworks={[1,10]}
-            // destNetworks={[1,10]}
-            // defaultSourceNetwork={10}
-            // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
-          />
-        )}
+          // sourceNetworks={[1,10]}
+          // destNetworks={[1,10]}
+          // defaultSourceNetwork={10}
+          // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
+        />
       </header>
     </div>
   );
