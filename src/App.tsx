@@ -96,7 +96,7 @@ function App() {
     // interactive: 'rgb(35,66,54)'
   };
 
-  const [showBridge, setShowBridge] = useState(false);
+  const [showBridge, setShowBridge] = useState(true);
 
   return (
     <div className="App">
@@ -134,9 +134,9 @@ function App() {
             )}
           </div>
         </div>
-        <button onClick={() => setShowBridge(!showBridge)}>
+        {/* <button onClick={() => setShowBridge(!showBridge)}>
           Show/hide
-        </button>
+        </button> */}
         {showBridge && (
           <Bridge
             API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
