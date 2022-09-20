@@ -96,6 +96,8 @@ function App() {
     // interactive: 'rgb(35,66,54)'
   };
 
+  const [showBridge, setShowBridge] = useState(false);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -132,9 +134,10 @@ function App() {
             )}
           </div>
         </div>
-        {/* <button onClick={() => setShowBridge(!showBridge)}>
+        <button onClick={() => setShowBridge(!showBridge)}>
           Show/hide
-        </button> */}
+        </button>
+        {showBridge &&
         <Bridge
           API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
           customize={customizeProperties}
@@ -150,7 +153,7 @@ function App() {
           // destNetworks={[1,10]}
           // defaultSourceNetwork={10}
           // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
-        />
+        />}
       </header>
     </div>
   );
