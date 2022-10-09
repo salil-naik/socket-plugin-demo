@@ -75,17 +75,32 @@ function App() {
   };
 
   const customizeProperties: Customize = {
-    borderRadius: 0.5,
+    // old
+    // borderRadius: 0.5,
     width: 400,
-    // fontFamily: "'Edu QLD Beginner', cursive",
-    primary: "rgb(20,24,25)",
-    secondary: "rgb(7,10,10)",
-    accent: "rgb(130,218,192)",
-    onAccent: "rgb(0,0,0)",
-    text: "rgb(255,255,255)",
-    secondaryText: "rgb(183, 191, 201)",
-    interactive: "rgb(20,24,25)",
-    onInteractive: "rgb(183,191,201)",
+    // // fontFamily: "'Edu QLD Beginner', cursive",
+    // primary: "rgb(20,24,25)",
+    // secondary: "rgb(7,10,10)",
+    // accent: "rgb(130,218,192)",
+    // onAccent: "rgb(0,0,0)",
+    // text: "rgb(255,255,255)",
+    // secondaryText: "rgb(183, 191, 201)",
+    // interactive: "rgb(20,24,25)",
+    // onInteractive: "rgb(183,191,201)",
+    // perp
+    // responsiveWidth: true,
+    primary: "rgb(9,9,10)",
+    secondary: "rgba(38, 40, 42)",
+    text: "rgb(255, 255, 255)",
+    secondaryText: "rgb(145, 153, 167)",
+    accent: "rgb(127, 231, 175)",
+    onAccent: "rgb(30, 40, 42)",
+    interactive: "rgb(51, 52, 53)",
+    onInteractive: "rgb(255, 255, 255)",
+    outline: "rgb(59, 61, 65)",
+    borderRadius: 1.2,
+
+    // other
     // accent: 'rgb(239,92,36)',
     // accent: 'rgb(255,255,255)',
     // onAccent:'rgb(239,92,36)',
