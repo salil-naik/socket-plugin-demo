@@ -158,6 +158,7 @@ function App() {
           customize={customizeProperties}
           provider={provider}
           enableRefuel={true}
+          // singleTxOnly={true}
           enableSameChainSwaps={true}
           defaultSourceNetwork={1}
           defaultDestNetwork={10}
