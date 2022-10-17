@@ -164,6 +164,10 @@ function App() {
           defaultDestNetwork={10}
           defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
           defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
+          onSourceTokenChange={(value) => console.log('Source Token: ', value?.name)}
+          onDestinationTokenChange={(value) => console.log('Dest Token: ', value?.name)}
+          onSourceNetworkChange={(value) => console.log('Source Nw: ', value.name)}
+          onBridgeSuccess={(value) => console.log('Route completed: ', value)}
 
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
