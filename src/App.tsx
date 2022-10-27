@@ -168,8 +168,8 @@ function App() {
           onDestinationTokenChange={(value) => console.log('Dest Token: ', value?.name)}
           onSourceNetworkChange={(value) => console.log('Source Nw: ', value.name)}
           onDestinationNetworkChange={(value) => console.log('Destination Nw: ', value.name)}
-          onBridgeSuccess={(value) => console.log('Route completed: ', value)}
-          onSubmit={(value) => console.log('Submitted: ', value)}
+          // onBridgeSuccess={(value) => console.log('Route completed: ', value)}
+          // onSubmit={(value) => console.log('Submitted: ', value)}
 
           // sourceNetworks={[1,10]}
           // destNetworks={[1,10]}
