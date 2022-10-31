@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import { ethers } from "ethers";
-import { Bridge, Customize } from "@socket.tech/widget";
+import { Bridge, Customize } from "@socket.tech/plugin";
 
 declare global {
   interface Window {
