@@ -159,6 +159,7 @@ function App() {
           provider={provider}
           enableRefuel={true}
           // singleTxOnly={true}
+          // includeBridges={['hyphen']}
           enableSameChainSwaps={true}
           defaultSourceNetwork={1}
           defaultDestNetwork={10}
