@@ -161,7 +161,7 @@ function App() {
           // singleTxOnly={true}
           // includeBridges={['hyphen']}
           enableSameChainSwaps={true}
-          defaultSourceNetwork={1}
+          // defaultSourceNetwork={1}
           defaultDestNetwork={10}
           defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
           defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
@@ -172,9 +172,9 @@ function App() {
           // onBridgeSuccess={(value) => console.log('Route completed: ', value)}
           // onSubmit={(value) => console.log('Submitted: ', value)}
 
-          // sourceNetworks={[1,10]}
-          // destNetworks={[1,10]}
-          // defaultSourceNetwork={10}
+          // sourceNetworks={[10]}
+          destNetworks={[10]}
+          defaultSourceNetwork={10}
           // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
         />}
       </header>
