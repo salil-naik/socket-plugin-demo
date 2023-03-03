@@ -173,8 +173,8 @@ function App() {
           // onSubmit={(value) => console.log('Submitted: ', value)}
 
           // sourceNetworks={[10]}
-          destNetworks={[10]}
-          defaultSourceNetwork={10}
+          // destNetworks={[10]}
+          // defaultSourceNetwork={10}
           // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
         />}
       </header>
