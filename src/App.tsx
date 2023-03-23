@@ -12,16 +12,19 @@ declare global {
 function App() {
   const [provider, setProvider] = useState<any>();
   const [userAddress, setUserAddress] = useState<string>();
+  const [network, setNetwork] = useState<any>();
 
   const fetchWalletData = async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
 
     const signer = await provider.getSigner();
     const userAddress = await signer.getAddress();
-
+    const network = await provider.getNetwork();
+    
     if (provider) {
       setProvider(provider);
       setUserAddress(userAddress);
+      setNetwork(network);
     }
   };
 
@@ -112,6 +115,8 @@ function App() {
   };
 
   const [showBridge, setShowBridge] = useState(false);
+  const _destNetworks = [network?.chainId];
+  const _defaultDestNetwork = _destNetworks[0]
 
   return (
     <div className="App">
@@ -162,7 +167,7 @@ function App() {
           // includeBridges={['hyphen']}
           enableSameChainSwaps={true}
           // defaultSourceNetwork={1}
-          defaultDestNetwork={10}
+          // defaultDestNetwork={10}
           defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
           defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
           onSourceTokenChange={(value) => console.log('Source Token: ', value?.name)}
@@ -176,6 +181,8 @@ function App() {
           // destNetworks={[10]}
           // defaultSourceNetwork={10}
           // tokenList="https://gateway.ipfs.io/ipns/tokens.uniswap.org"
+          // destNetworks={_destNetworks}
+          // defaultDestNetwork={_defaultDestNetwork}
         />}
       </header>
     </div>
