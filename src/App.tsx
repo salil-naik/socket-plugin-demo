@@ -165,15 +165,15 @@ function App() {
           enableRefuel={true}
           // singleTxOnly={true}
           // includeBridges={['hyphen']}
-          enableSameChainSwaps={true}
+          // enableSameChainSwaps={true}
           // defaultSourceNetwork={1}
           // defaultDestNetwork={10}
           defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
           defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
-          onSourceTokenChange={(value) => console.log('Source Token: ', value?.name)}
-          onDestinationTokenChange={(value) => console.log('Dest Token: ', value?.name)}
-          onSourceNetworkChange={(value) => console.log('Source Nw: ', value.name)}
-          onDestinationNetworkChange={(value) => console.log('Destination Nw: ', value.name)}
+          // onSourceTokenChange={(value) => console.log('Source Token: ', value?.name)}
+          // onDestinationTokenChange={(value) => console.log('Dest Token: ', value?.name)}
+          // onSourceNetworkChange={(value) => console.log('Source Nw: ', value.name)}
+          // onDestinationNetworkChange={(value) => console.log('Destination Nw: ', value.name)}
           // onBridgeSuccess={(value) => console.log('Route completed: ', value)}
           // onSubmit={(value) => console.log('Submitted: ', value)}
 
