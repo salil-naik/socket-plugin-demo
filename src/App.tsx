@@ -163,6 +163,7 @@ function App() {
           customize={customizeProperties}
           provider={provider}
           enableRefuel={true}
+          selectivelyShowRefuel={true}
           // singleTxOnly={true}
           // includeBridges={['hyphen']}
           // enableSameChainSwaps={true}
