@@ -15,7 +15,7 @@ function App() {
   const [network, setNetwork] = useState<any>();
 
   const fetchWalletData = async () => {
-    const provider = new ethers.providers.Web3Provider(window.ethereum, "any");
+    const provider = new ethers.BrowserProvider(window.ethereum, "any");
 
     const signer = await provider.getSigner();
     const userAddress = await signer.getAddress();
@@ -31,7 +31,7 @@ function App() {
   const connectWallet = async () => {
     try {
       if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider(
+        const provider = new ethers.BrowserProvider(
           window.ethereum,
           "any"
         );
