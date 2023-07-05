@@ -159,9 +159,7 @@ function App() {
         </button>
         {showBridge &&
         <Bridge
-          // API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
-          API_KEY="1b2fd225-062f-41aa-8c63-d1fef19945e7"
-          // API_KEY="72a5b4b0-e727-48be-8aa1-5da9d62fe635"
+          API_KEY="72a5b4b0-e727-48be-8aa1-5da9d62fe635"
           customize={customizeProperties}
           provider={provider}
           enableRefuel={true}
