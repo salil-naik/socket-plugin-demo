@@ -159,7 +159,9 @@ function App() {
         </button>
         {showBridge &&
         <Bridge
-          API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
+          // API_KEY="645b2c8c-5825-4930-baf3-d9b997fcd88c"
+          API_KEY="1b2fd225-062f-41aa-8c63-d1fef19945e7"
+          // API_KEY="72a5b4b0-e727-48be-8aa1-5da9d62fe635"
           customize={customizeProperties}
           provider={provider}
           enableRefuel={true}
@@ -167,10 +169,11 @@ function App() {
           // singleTxOnly={true}
           // includeBridges={['hyphen']}
           // enableSameChainSwaps={true}
-          // defaultSourceNetwork={1}
-          // defaultDestNetwork={10}
-          defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
-          defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
+          defaultSourceNetwork={10}
+          defaultDestNetwork={137}
+          // defaultSourceToken="0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+          // defaultDestToken="0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9"
+          defaultSourceToken="0x94b008aa00579c1307b0ef2c499ad98a8ce58e58"
           // onSourceTokenChange={(value) => console.log('Source Token: ', value?.name)}
           // onDestinationTokenChange={(value) => console.log('Dest Token: ', value?.name)}
           // onSourceNetworkChange={(value) => console.log('Source Nw: ', value.name)}
